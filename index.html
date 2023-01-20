@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Styles -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body
+    class="bg-darkBlue relative bg-no-repeat md:bg-right-top md:bg-bg-tablet 2xl:bg-bg-desktop 2xl:bg-[right_top_8.125rem]"
+  >
+    <!-- Mobile Image -->
+    <img
+      class="-z-10 md:hidden object-cover w-full absolute opacity-10"
+      src="./assets/mobile/image-host.jpg"
+      alt="#"
+      aria-label="hidden"
+    />
+    <main>
+      <header
+        class="container pt-[62px] flex justify-center md:pt-[50px] md:justify-start lg:pt-[112px] mb-14 md:mb-40 md:relative md:right-6"
+      >
+        <a class="relative z-10 w-[130px]" href="#"
+          ><img src="./assets/desktop/logo.svg" alt="pod logo"
+        /></a>
+      </header>
+      <section
+        class="md:bg-darkBlue container md:pt-[93px] md:pb-[15px] md:relative md:right-6"
+      >
+        <div class="flex flex-col text-center md:text-left">
+          <div>
+            <h1
+              class="text-accent uppercase text-heading-s mb-4 md:mb-8 lg:mb-6 md:text-heading-m lg:text-heading-l"
+            >
+              Publish your podcasts <span class="text-white">everywhere.</span>
+            </h1>
+            <p
+              class="text-lightGrey text-body-s md:text-body-l md:max-w-[445px] mb-8"
+            >
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
+          </div>
+          <div
+            class="w-5/12 md:w-3/4 gap-4 md:gap-8 flex items-center justify-between mb-12 md:order-last md:mb-0"
+          >
+            <img
+              class="w-1/2"
+              src="./assets/desktop/spotify.svg"
+              alt="spotify-logo"
+            />
+            <img
+              class="w-1/2"
+              src="./assets/desktop/apple-podcast.svg"
+              alt="apple-podcasts-logo"
+            />
+            <img
+              class="w-1/2"
+              src="./assets/desktop/google-podcasts.svg"
+              alt="google-podcasts-logo"
+            />
+            <img
+              class="w-1/2"
+              src="./assets/desktop/pocket-casts.svg"
+              alt="pocket-casts-logo"
+            />
+          </div>
+          <form
+            class="relative z-0 flex flex-col gap-4 md:flex-row md:gap-0 md:mb-16 md:max-w-[427px] md:block"
+            action="#"
+          >
+            <input
+              name="email"
+              class="text-white outline-none btn py-[10px] bg-darkGrey hover:bg-darkGrey w-full md:h-[56px] shadow-none"
+              type="email"
+              placeholder="Email address"
+            />
+            <p class="hidden absolute text-error text-xs left-7 top-16">
+              Oops! Please check your email!
+            </p>
+            <button
+              id="btn-submit"
+              class="btn md:text-[14px] hover:bg-accentHover w-full md:absolute md:top-[.3rem] md:inset-y-0 md:w-[162px] md:-ml-[166px] md:h-[46px]"
+            >
+              Request Access
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <img
+        class="hidden md:block md:relative md:right-6"
+        src="./assets/desktop/bg-pattern-dots.svg"
+        alt="#"
+        aria-label="hidden"
+      />
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
