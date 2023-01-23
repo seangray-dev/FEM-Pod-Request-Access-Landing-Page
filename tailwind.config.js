@@ -32,6 +32,7 @@ module.exports = {
       backgroundImage: {
         "bg-tablet": "url('../assets/tablet/image-host.jpg')",
         "bg-desktop": "url('../assets/desktop/image-host.jpg')",
+        "bg-pattern-footer": "url(../assets/desktop/bg-pattern-dots.svg)",
       },
     },
   },
